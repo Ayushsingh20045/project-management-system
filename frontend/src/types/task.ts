@@ -12,4 +12,9 @@ export interface Task {
   project: string;
   createdAt: string;
   updatedAt: string;
+  assignedTo?: {
+    _id: string;
+    name: string;
+    email: string;
+  };
 }
